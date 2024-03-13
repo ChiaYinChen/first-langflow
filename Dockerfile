@@ -16,4 +16,5 @@ WORKDIR $HOME/app
 COPY --chown=user . $HOME/app
 
 RUN pip install langflow>==0.6.10 -U --user
+RUN chmod +x ./entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]

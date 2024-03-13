@@ -1,0 +1,13 @@
+tasks:
+  - command: |
+      make up
+
+ports:
+  - port: 7860
+    name: LangFlow
+    onOpen: open-browser
+    visibility: public
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
